@@ -23,7 +23,6 @@ public class TarefaService {
 
         List<String> statusValidos = Arrays.asList("INICIADA, NAO_INICIADA, CONCLUIDA");
 
-        try {
             if (tarefa.getTitulo().isEmpty()) {
                 throw new IllegalArgumentsException("O título da tarefa é obrigatório!");
             }
@@ -34,9 +33,6 @@ public class TarefaService {
                 throw new IllegalArgumentsException("O status da tarefa é inválido!");
             }
 
-        } catch (IllegalArgumentsException i) {
-            throw new IllegalArgumentsException("O título da tarefa é obrigatório!");
-        }
         return tarefaRepository.save(tarefa);
     }
 
