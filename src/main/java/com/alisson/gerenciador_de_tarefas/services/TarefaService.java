@@ -34,6 +34,7 @@ public class TarefaService {
             }
 
         return tarefaRepository.save(tarefa);
+
     }
 
     public List<Tarefa> consultarTarefa() {
