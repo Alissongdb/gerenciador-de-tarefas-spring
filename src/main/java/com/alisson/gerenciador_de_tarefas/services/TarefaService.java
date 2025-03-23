@@ -32,9 +32,7 @@ public class TarefaService {
             if (!statusValidos.contains(tarefa.getStatus())) {
                 throw new IllegalArgumentsException("O status da tarefa é inválido!");
             }
-
         return tarefaRepository.save(tarefa);
-
     }
 
     public List<Tarefa> consultarTarefa() {
