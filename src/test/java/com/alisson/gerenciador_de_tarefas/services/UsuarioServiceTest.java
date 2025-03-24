@@ -45,5 +45,6 @@ class TarefaServiceTest {
 
         var tarefas = tarefaService.consultarTarefa();
         assertEquals(1, tarefas.size());  // Verifica que temos uma tarefa
+
     }
 }
